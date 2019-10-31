@@ -1,0 +1,70 @@
+<div class="recontainer">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <img src="../../assets/log.png" class="img-logo">
+        <a class="navbar-brand" routerLink="/dashboard2">BookLand</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <!-- <li class="nav-item active">
+                    <a class="nav-link" routerLink="/login">Login</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" routerLink="/sign-up">Register</a>
+                </li> -->
+                <li class="nav-item active">
+                    <a class="nav-link" routerLink="/favourite">MyFavourites</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" routerLink="/recommend">MyRecommendations</a>
+                </li>
+
+                <!--<i class="fa fa-home" aria-hidden="true" style="font-size:30px;color:black;" routerLink="/dashboard2"></i>-->
+            </ul>
+            <!-- <button class="btn" type="submit" routerLink='/profile'>
+              <span class="glyphicon glyphicon-user"></span>
+            </button> -->
+
+            <!-- <i class="fa fa-user-circle" aria-hidden="true" routerLink='/profile' style="font-size:30px;color:black;"> </i> -->
+
+
+            <!--<i class="fa fa-user-circle" aria-hidden="true" routerLink='/profile' style="font-size:30px;color:tan;"> </i>-->
+            <button class="btn1" type="submit" routerLink='/profile'>
+              <i class="fa fa-user-circle" aria-hidden="true" routerLink='/profile' style="font-size:30px;"> </i>
+            </button>
+            <button class="btn" type="submit" routerLink='/home'> Search</button>
+            <button class="btn" type="submit" (click)="logout()">LogOut</button>
+        </div>
+    </nav>
+
+    <div *ngFor="let b of data1| paginate:{itemsPerPage:8,currentPage :p}">
+        <div class="card_res">
+            <mat-card class="card_size">
+                <mat-card-title class="title">
+                    {{b.title}}</mat-card-title>
+                <div class="image_res">
+                    <img class="img" *ngIf="b.isbn" mat-card-image src="http://covers.openlibrary.org/b/olid/{{b.isbn}}-L.jpg">
+                    <img class="img" *ngIf="!b.isbn" mat-card-image src="../../assets/missingimg.jpg" />
+                </div>
+                <mat-card-content>
+                    <div class="des">
+                        <p style="text-align: center">
+                            {{b.author_name}}
+                        </p>
+                    </div>
+                </mat-card-content>
+                <mat-card-footer class="footer1">
+                    <!-- <button id="myBtn" class="addButton1" value="Favourite" style="background-color:gray" mat-raised-button> Favourite
+                   <i class="fa fa-heart-o" style="font-size:18px;color:white;"></i>
+                    <i class="fas fa-heart"></i></button> -->
+                    <button class="addButton2" value1="UnRecommend" style="background-color:gray" mat-raised-button (click)="delete(b)"> UnRecommend
+                        <i class="far fa-thumbs-down"></i>
+                    </button>
+                </mat-card-footer>
+            </mat-card>
+        </div>
+    </div>
+    <div class="pagination">
+        <pagination-controls (pageChange)="p = $event"></pagination-controls>
+    </div>

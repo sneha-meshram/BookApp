@@ -1,0 +1,40 @@
+# Dockerfile has been added in all micro-services, you need to dockerize all micro-services and add docker-compose.yml file
+version: '3.3'
+services:
+  BookLandUser:
+    build:
+      dockerfile: Dockerfile
+      context: ./BookLandUser-Service
+    container_name: BookLand-docker
+    restart: always
+    network_mode: host
+    ports:
+      - "8087:8087"
+    depends_on:
+      - mysql-service
+
+BookLandRecommend:
+    build:
+      dockerfile: Dockerfile
+      context: ./BookLandRecommend
+    container_name: BookLand-docker
+    restart: always
+    network_mode: host
+    ports:
+        - "8086:8086"
+    depends_on:
+        - mongo-service
+
+BokkLandFavourite:
+    build:
+      dockerfile: Dockerfile
+      context: ./BokkLandFavourite
+    container_name: BookLand-docker
+    restart: always
+    network_mode: host
+    ports:
+      - "8085:8085"
+    depends_on:
+      - mongo-service
+
+  

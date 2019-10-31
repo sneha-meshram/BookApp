@@ -1,0 +1,204 @@
+.logo {
+    width: 3vw;
+}
+
+.navbar-nav {
+    align-content: flex-end;
+}
+
+.navbar {
+    background-color: lightslategray;
+}
+
+.navbar-brand {
+    margin-left: 1em;
+    font-family: Georgia, Times, 'Times New Roman';
+    font-style: italic, bold;
+}
+
+html {
+    background-color: #56baed;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    height: 100vh;
+}
+
+.mat-card-title {
+    color: white;
+}
+
+.procontainer {
+    background-color: lavender;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.text {
+    padding-left: 30px;
+    color: blue;
+}
+
+.form-control {
+    font-size: 20px;
+}
+
+.col-11 {
+    margin-left: 16px;
+}
+
+.mat-card {
+    -webkit-box-shadow: 1px -3px 12px 18px rgba(0, 0, 0, 0.57);
+    -moz-box-shadow: 1px -3px 12px 18px rgba(0, 0, 0, 0.57);
+    box-shadow: 1px -3px 12px 18px rgba(0, 0, 0, 0.57);
+    /* background-color: ghostwhite; */
+    background-image: url("../../assets/bookbg10.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 2em;
+    /* margin-top: -1em; */
+    width: 28em;
+    margin-left: 39vh;
+    margin-top: 6vh;
+}
+
+img {
+    /* display: block;
+   margin-top: 20px;
+   margin-left: 10px;
+   height:100px;
+   width:100px;
+   border-radius: 100%; */
+    float: none;
+    margin: 0 auto;
+    width: 30%;
+    height: 30%;
+    -webkit-border-radius: 50% !important;
+    -moz-border-radius: 50% !important;
+    border-radius: 50% !important;
+}
+
+.submit {
+    background-color: white;
+    text-decoration-color: black;
+    border-color: grey;
+}
+
+h1 {
+    color: white;
+}
+
+h5 {
+    color: white;
+}
+
+.fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.btn {
+    background-color: white;
+    text-decoration-color: black;
+    border-color: grey;
+    /* align-items: flex-end;
+    float: right; */
+}
+
+.fa {
+    align-items: flex-end;
+    float: right;
+}
+
+.img-logo {
+    width: 3vw;
+}
+
+.navbar-nav {
+    align-content: flex-end;
+}
+
+.navbar {
+    background-color: lightslategray;
+}
+
+.btn {
+    float: right;
+    margin-top: 0.5rem;
+    display: inline-block;
+    margin-right: .5rem;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: palevioletred;
+    outline: none;
+    color: black;
+    background-color: tan;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px brown;
+}
+
+.btn2 {
+    background-color: white;
+    text-decoration-color: black;
+    border-color: grey;
+}
+
+.images {
+    max-width: 20vw;
+    max-height: 25vh;
+    margin-right: 1em;
+    margin-bottom: 2em;
+    margin-top: 1em;
+}
+
+.navbar-brand {
+    margin-left: 1em;
+    font-family: Georgia, Times, 'Times New Roman';
+    font-style: italic, bold;
+}
+
+.btn-outline-success {
+    color: rgb(32, 22, 92);
+    border-color: rgb(8, 3, 5);
+    padding-left: 1em;
+    margin-top: 3rem;
+}
+
+#footer {
+    clear: both;
+    position: relative;
+    height: 200px;
+    margin-top: -50px;
+}

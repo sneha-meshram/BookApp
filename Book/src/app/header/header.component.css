@@ -1,0 +1,13 @@
+.img-logo {
+    width: 3vw;
+}
+
+.navbar-nav {
+    align-content: flex-end;
+}
+
+.navbar-brand {
+    margin-left: 1em;
+    font-family: Georgia, Times, 'Times New Roman';
+    font-style: italic, bold;
+}

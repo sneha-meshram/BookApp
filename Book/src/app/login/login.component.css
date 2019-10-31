@@ -1,0 +1,84 @@
+.img-logo {
+    width: 3vw;
+}
+
+.navbar-nav {
+    align-content: flex-end;
+}
+
+.navbar {
+    background-color: lightslategray;
+}
+
+.navbar-brand {
+    margin-left: 1em;
+    font-family: Georgia, Times, 'Times New Roman';
+    font-style: italic, bold;
+}
+
+.logincontainer {
+    background-color: aliceblue;
+    height: 100%;
+}
+
+
+/* .container {
+    background-image: url("../../assets/bg7.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    min-width: 1400px;
+    width: 100%;
+    position: fixed;
+    top: 10;
+    left: 10;
+ } */
+
+.validator {
+    color: red;
+    font-size: 25px;
+}
+
+.small {
+    color: red;
+    font-size: 20px;
+}
+
+.text {
+    padding-left: 30px;
+    color: blue;
+}
+
+.form-control {
+    font-size: 20px;
+}
+
+.col-11 {
+    margin-left: 16px;
+}
+
+.card {
+    -webkit-box-shadow: 1px -3px 12px 18px rgba(0, 0, 0, 0.57);
+    -moz-box-shadow: 1px -3px 12px 18px rgba(0, 0, 0, 0.57);
+    box-shadow: 1px -3px 12px 18px rgba(0, 0, 0, 0.57);
+    /* background-color: ghostwhite; */
+    background-image: url("../../assets/bookbg10.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.submit {
+    background-color: white;
+    text-decoration-color: black;
+    border-color: grey;
+    /* align-items: flex-end;
+    float: right; */
+}
+
+h1 {
+    color: white;
+}
+
+a {
+    color: grey;
+}

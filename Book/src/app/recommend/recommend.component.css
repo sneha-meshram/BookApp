@@ -1,0 +1,189 @@
+.img-logo {
+    width: 3vw;
+}
+
+.navbar-nav {
+    align-content: flex-end;
+}
+
+.navbar-brand {
+    margin-left: 1em;
+    font-family: Georgia, Times, 'Times New Roman';
+    font-style: italic, bold;
+}
+
+.recontainer {
+    height: 190%;
+    /* background-image: url(../../assets/bg5.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: aliceblue;
+}
+
+.content {
+    background-color: white;
+    height: 50%;
+}
+
+.navbar {
+    background-color: cadetblue;
+}
+
+.card_res {
+    width: 18%;
+    max-height: 90vh;
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    margin: 5vh;
+    float: left;
+    margin-left: 3%;
+    border-radius: 4px solid whitesmoke;
+    background-color: silver;
+    -webkit-box-shadow: 1px -3px 12px 18px rgba(0, 0, 0, 0.57);
+    -moz-box-shadow: 1px -3px 12px 18px rgba(0, 0, 0, 0.57);
+    box-shadow: 1px -3px 12px 18px rgba(0, 0, 0, 0.57);
+}
+
+.sbutton:hover {
+    cursor: move;
+    color: gray;
+}
+
+
+/* .card_size {
+    height: 11cm;
+ } */
+
+.title {
+    text-align: center;
+    height: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.img {
+    height: 200px;
+}
+
+.title {
+    padding: 5vh;
+}
+
+.footer1 {
+    padding: 6px;
+    display: flex;
+    flex: auto;
+}
+
+
+/* .addButton1 {
+    display: flex;
+    flex: auto;
+    float: left;
+    margin-right: 10px;
+    padding: 5px;
+    align-items: center;
+ }
+ .addButton1:hover {
+    cursor: move;
+    background-color: gray;
+    color: wheat;
+ } */
+
+.addButton2 {
+    /* display: flex; */
+    flex: auto;
+    float: center;
+    margin-right: 10px;
+    padding: 5px;
+    /* max-width: 100%; */
+    text-align: center;
+}
+
+.addButton2:hover {
+    cursor: move;
+    background-color: gray;
+    color: wheat;
+}
+
+.pagination {
+    max-width: 50%;
+    align-items: center;
+    flex: auto;
+    float: right;
+    margin-top: 40%;
+}
+
+.far {
+    margin-left: 1em;
+    margin-top: 0.25em;
+}
+
+.img-logo {
+    width: 3vw;
+}
+
+.navbar-nav {
+    align-content: flex-end;
+}
+
+.navbar {
+    background-color: lightslategray;
+}
+
+.btn {
+    float: right;
+    margin-top: 0.5rem;
+    display: inline-block;
+    margin-right: .5rem;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: palevioletred;
+    outline: none;
+    color: black;
+    background-color: tan;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px brown;
+}
+
+.btn1 {
+    float: right;
+    margin-top: 0.5rem;
+    display: inline-block;
+    margin-right: .5rem;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: palevioletred;
+    outline: none;
+    color: black;
+    background-color: tan;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px brown;
+    padding: 0.1em;
+    width: 3em;
+}
+
+.images {
+    max-width: 20vw;
+    max-height: 25vh;
+    margin-right: 1em;
+    margin-bottom: 2em;
+    margin-top: 1em;
+}
+
+.navbar-brand {
+    margin-left: 1em;
+    font-family: Georgia, Times, 'Times New Roman';
+    font-style: italic, bold;
+}
+
+.btn-outline-success {
+    color: rgb(32, 22, 92);
+    border-color: rgb(8, 3, 5);
+    padding-left: 1em;
+    margin-top: 3rem;
+}

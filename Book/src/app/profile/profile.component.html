@@ -1,0 +1,88 @@
+<nav class="navbar navbar-expand-lg navbar-light">
+    <img src="../../assets/log.png" class="img-logo">
+    <a class="navbar-brand" routerLink="/dashboard2">BookLand</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <!-- <li class="nav-item active">
+                <a class="nav-link" routerLink="/login">Login</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" routerLink="/sign-up">Register</a>
+            </li> -->
+            <li class="nav-item active">
+                <a class="nav-link" routerLink="/favourite">MyFavourites</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" routerLink="/recommend">MyRecommendations</a>
+            </li>
+            <!-- <i class="fa fa-home" aria-hidden="true" style="font-size:30px;color:black;" routerLink="/dashboard2"></i>-->
+        </ul>
+        <!-- <button class="btn" type="submit" routerLink='/profile'>
+          <span class="glyphicon glyphicon-user"></span>
+        </button> -->
+        <!-- <i class="fa fa-user-circle" aria-hidden="true" routerLink='/profile' style="font-size:30px;color:black;"> </i> -->
+        <button class="btn" type="submit" routerLink='/home'> Search</button>
+        <button class="btn" type="submit" (click)="logout()">LogOut</button>
+        <!--<i class="fa fa-user-circle" aria-hidden="true" routerLink='/profile' style="font-size:30px;color:tan;"> </i>-->
+        <!-- <button class="btn1" type="submit" routerLink='/profile'>
+          <i class="fa fa-user-circle" aria-hidden="true" routerLink='/profile' style="font-size:30px;"> </i>
+        </button> -->
+    </div>
+</nav>
+<div class="container">
+    <form [formGroup]="signupForm">
+        <mat-card>
+            <mat-card-title>Profile-Page</mat-card-title>
+            <div class="form-group">
+                <img [src]='abc[0]?.image' height="100" style="margin-left: 2em"> <br/>
+                <input type='file' (change)="onSelectFile($event)">
+                <div class="fullname">
+                    <label>FullName</label><br>
+                    <input type="text" class="form-control" value={{abc[0]?.fullname}} [ngClass]="{ 'is-invalid': submitted && f.password.errors }" />
+                    <div *ngIf="submitted && f.fullname.errors" class="invalid-feedback">
+                        <div style="color:firebrick;" *ngIf="f.fullname.errors.required">Password is required</div>
+                    </div>
+                </div>
+                <div class="email">
+                    <label>Email</label><br>
+                    <input type="text" value={{abc[0]?.email}} class="form-control" [ngClass]="{ 'is-invalid': submitted && f.password.errors }" />
+                    <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                        <div style="color:firebrick;" *ngIf="f.email.errors.required">Password is required</div>
+                    </div>
+                </div>
+            </div>
+            <div class="password">
+                <label>Password</label>
+                <input type="password" formControlName="password" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.password.errors }" />
+                <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+                    <div style="color:firebrick;" *ngIf="f.password.errors.required">Password is required</div>
+                    <div style="color:firebrick;" *ngIf="f.password.errors.minlength">Password must be at least 6 characters</div>
+                </div>
+                <div class="form-group">
+                    <label>New Password</label>
+                    <input type="password" formControlName="newpassword" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.newpassword.errors }" />
+                    <div *ngIf="submitted && f.newpassword.errors" class="invalid-feedback">
+                        <div style="color:firebrick;" *ngIf="f.newpassword.errors.required">Password is required</div>
+                        <div style="color:firebrick;" *ngIf="f.newpassword.errors.mustMatch">Passwords must match</div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Confirm Password</label>
+                <input type="password" formControlName="confirmPassword" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.confirmPassword.errors }" />
+                <div *ngIf="submitted && f.confirmPassword.errors" class="invalid-feedback">
+                    <div style="color:firebrick;" *ngIf="f.confirmPassword.errors.required">Confirm Password is required</div>
+                    <div style="color:firebrick;" *ngIf="f.confirmPassword.invalid">Passwords must match</div>
+                </div>
+            </div><br>
+            <button type="submit" class="btn2" style="margin-right:2em" (click)="updateUser()">Save</button>
+            <!-- <button class="btn btn-secondary" type="reset" (click)="onReset()">Cancel</button> -->
+        </mat-card>
+    </form>
+</div>
+<!-- <footer id="footer">
+    <app-footer></app-footer>
+</footer> -->
